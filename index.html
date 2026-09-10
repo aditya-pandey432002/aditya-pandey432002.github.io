@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aditya Pandey, Associate Product Manager</title>
+<meta name="description" content="Aditya Pandey is an Associate Product Manager at UnifyApps who scopes and ships enterprise AI workflows. Shipped work, case studies and résumé.">
+<meta property="og:title" content="Aditya Pandey, Associate Product Manager">
+<meta property="og:description" content="Enterprise AI workflows, from discovery to launch. Shipped work and product case studies.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2317202B'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial,sans-serif' font-weight='700' font-size='28' fill='%23F4F6F8'%3EAP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,650;12..96,750&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #F4F6F8;
+    --surface: #FFFFFF;
+    --ink: #17202B;
+    --muted: #56606C;
+    --rule: #D8DDE3;
+    --blue: #2448A8;
+    --blue-tint: #E6ECF8;
+    --red: #C62F3A;
+    --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+    --body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  img { max-width: 100%; }
+  a { color: var(--blue); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+  a:hover { text-decoration-thickness: 2px; }
+  :focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; border-radius: 4px; }
+  h1, h2, h3, h4 { font-family: var(--display); line-height: 1.15; margin: 0; font-weight: 650; letter-spacing: -0.01em; }
+  p { margin: 0; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .skip { position: absolute; left: 16px; top: -60px; background: var(--ink); color: var(--paper); padding: 8px 14px; border-radius: 6px; z-index: 20; }
+  .skip:focus { top: 12px; }
+
+  .wrap { width: 100%; max-width: 1140px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 48px); }
+
+  /* Header */
+  .site-header {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(244, 246, 248, 0.92);
+    backdrop-filter: saturate(1.2) blur(8px);
+    border-bottom: 1px solid transparent;
+    transition: border-color .2s;
+  }
+  .site-header.scrolled { border-bottom-color: var(--rule); }
+  .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 68px; }
+  .brand { font-family: var(--display); font-weight: 750; font-size: 1.125rem; color: var(--ink); text-decoration: none; letter-spacing: -0.01em; }
+  .nav { display: flex; align-items: center; gap: clamp(12px, 2.4vw, 28px); font-family: var(--display); font-size: 0.9375rem; }
+  .nav a { color: var(--ink); text-decoration: none; white-space: nowrap; }
+  .brand { white-space: nowrap; }
+  .nav a:hover { color: var(--blue); }
+  .nav .nav-resume { border: 1.5px solid var(--ink); padding: 6px 14px; border-radius: 999px; }
+  .nav .nav-resume:hover { border-color: var(--blue); }
+
+  /* Hero */
+  .hero { padding-top: clamp(40px, 7vw, 96px); padding-bottom: clamp(64px, 9vw, 112px); }
+  .hero h1 {
+    font-size: clamp(2.25rem, 5vw, 3.9rem);
+    font-weight: 700;
+    line-height: 1.04;
+    letter-spacing: -0.028em;
+    max-width: 17ch;
+    font-variation-settings: "opsz" 96;
+  }
+  .hero-top { display: grid; grid-template-columns: minmax(0, 1fr) clamp(220px, 27vw, 330px); gap: clamp(32px, 5vw, 72px); align-items: end; }
+  .portrait, .portrait img { display: block; }
+  .portrait img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 18px; background: #E8E3DE; }
+  .campus { margin: 0 0 36px; }
+  .campus img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 1; object-fit: cover; border-radius: 14px; background: #DDE3D5; }
+  .campus figcaption { margin: 10px 0 0; }
+  .hero-lede { margin-top: 28px; max-width: 60ch; font-size: 1.1875rem; color: var(--muted); }
+  .hero-lede strong { color: var(--ink); font-weight: 600; }
+
+  .redlines { list-style: none; margin: clamp(44px, 6vw, 72px) 0 0; padding: 0; border-top: 1px solid var(--rule); }
+  .redlines li {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr) minmax(0, 1.3fr);
+    align-items: baseline;
+    gap: 8px 32px;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .redlines del {
+    position: relative; justify-self: start;
+    text-decoration: none;
+    font-family: var(--display); font-size: clamp(1.125rem, 2vw, 1.375rem); color: var(--muted);
+  }
+  .redlines del::after {
+    content: ""; position: absolute; left: -3px; right: -3px; top: 50%;
+    height: 2px; background: var(--red); border-radius: 2px;
+    transform: scaleX(0); transform-origin: left center;
+    animation: strike .45s cubic-bezier(.6,.05,.3,1) forwards;
+    animation-delay: calc(var(--i) * .5s + .5s);
+  }
+  .redlines ins {
+    text-decoration: none;
+    font-family: var(--display); font-weight: 750; font-size: clamp(1.75rem, 3.4vw, 2.5rem);
+    line-height: 1; letter-spacing: -0.02em; color: var(--ink);
+    opacity: 0; transform: translateY(6px);
+    animation: write .4s ease-out forwards;
+    animation-delay: calc(var(--i) * .5s + .85s);
+  }
+  .redlines .note { font-size: 0.9375rem; color: var(--muted); line-height: 1.5; }
+  @keyframes strike { to { transform: scaleX(1); } }
+  @keyframes write { to { opacity: 1; transform: none; } }
+
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 40px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: var(--display); font-weight: 650; font-size: 1rem;
+    padding: 12px 22px; border-radius: 999px; text-decoration: none;
+    border: 1.5px solid var(--ink); color: var(--ink); background: transparent;
+  }
+  .btn:hover { border-color: var(--blue); color: var(--blue); }
+  .btn.primary { background: var(--ink); color: var(--paper); }
+  .btn.primary:hover { background: var(--blue); border-color: var(--blue); color: #fff; }
+
+  /* Sections */
+  .section {
+    display: grid;
+    grid-template-columns: minmax(170px, 250px) minmax(0, 1fr);
+    gap: clamp(28px, 5vw, 80px);
+    padding-block: clamp(64px, 9vw, 112px);
+    border-top: 1px solid var(--rule);
+  }
+  .section-head { position: sticky; top: 100px; align-self: start; }
+  .section-head h2 { font-size: clamp(1.75rem, 2.8vw, 2.25rem); letter-spacing: -0.02em; }
+  .section-head p { margin-top: 12px; font-size: 0.9375rem; color: var(--muted); line-height: 1.55; }
+  .section-body { min-width: 0; }
+
+  /* Work entries */
+  .entry { padding-bottom: 48px; margin-bottom: 48px; border-bottom: 1px solid var(--rule); }
+  .entry:last-of-type { margin-bottom: 0; }
+  .entry-top { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; }
+  .entry h3 { font-size: clamp(1.375rem, 2.2vw, 1.625rem); }
+  .status {
+    font-family: var(--display); font-size: 0.8125rem; font-weight: 650;
+    color: var(--blue); background: var(--blue-tint); padding: 3px 10px; border-radius: 999px;
+  }
+  .entry-meta { margin-top: 6px; font-size: 0.9375rem; color: var(--muted); }
+  .entry-problem { margin-top: 18px; max-width: 64ch; font-size: 1.125rem; }
+  .entry ul.points { margin: 16px 0 0; padding-left: 1.15em; max-width: 66ch; }
+  .entry ul.points li { margin-top: 8px; padding-left: 4px; }
+  .entry ul.points li::marker { color: var(--muted); }
+  .tools { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; }
+  .tools li { font-family: var(--display); font-size: 0.8125rem; border: 1px solid var(--rule); background: var(--surface); padding: 3px 10px; border-radius: 6px; color: var(--muted); }
+  .results { list-style: none; margin: 22px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px 36px; }
+  .results li { font-family: var(--display); font-size: 1.0625rem; }
+  .results del { text-decoration: line-through; text-decoration-color: var(--red); text-decoration-thickness: 2px; color: var(--muted); margin-right: 8px; }
+  .results ins { text-decoration: none; font-weight: 750; }
+
+  .sub { font-size: 1.25rem; margin: 64px 0 8px; }
+  .timeline { list-style: none; margin: 0; padding: 0; }
+  .timeline li { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 6px 24px; padding: 22px 0; border-bottom: 1px solid var(--rule); }
+  .timeline li:last-child { border-bottom: 0; }
+  .when { font-family: var(--display); font-size: 0.9375rem; color: var(--muted); padding-top: 3px; }
+  .timeline h4 { font-size: 1.125rem; }
+  .timeline p { margin-top: 6px; max-width: 64ch; color: var(--ink); }
+
+  /* Case studies */
+  .study { background: var(--surface); border: 1px solid var(--rule); border-radius: 18px; padding: clamp(24px, 4vw, 44px); }
+  .study + .study { margin-top: 28px; }
+  .study h3 { font-size: clamp(1.5rem, 2.6vw, 2rem); letter-spacing: -0.02em; max-width: 26ch; }
+  .study .entry-meta { margin-top: 10px; }
+  .study-summary { margin-top: 18px; max-width: 64ch; font-size: 1.125rem; }
+
+  .brief { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin: 28px 0 0; }
+  .brief dt { font-family: var(--display); font-weight: 650; font-size: 0.9375rem; }
+  .brief dd { margin: 6px 0 0; font-size: 0.96875rem; line-height: 1.6; color: var(--muted); }
+
+  figure { margin: 32px 0 0; }
+  figcaption { font-family: var(--display); font-size: 0.875rem; color: var(--muted); margin-bottom: 14px; }
+
+  .scores { display: grid; gap: 10px; }
+  .score { display: grid; grid-template-columns: minmax(0, 18rem) minmax(0, 1fr) 3rem; align-items: center; gap: 14px; font-family: var(--display); font-size: 0.9375rem; }
+  .track { height: 12px; background: var(--paper); border-radius: 99px; overflow: hidden; }
+  .track span { display: block; height: 100%; width: calc(var(--v) * 10%); background: #B9C1CC; border-radius: 99px; }
+  .score.chosen { font-weight: 650; }
+  .score.chosen .track span { background: var(--blue); }
+  .score b { text-align: right; font-weight: 650; font-variant-numeric: tabular-nums; }
+
+  .survey { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; border-top: 2px solid var(--ink); }
+  .survey div { padding: 14px 16px 4px 0; }
+  .survey div + div { padding-left: 16px; border-left: 1px solid var(--rule); }
+  .survey b { display: block; font-family: var(--display); font-weight: 750; font-size: clamp(1.75rem, 3vw, 2.25rem); line-height: 1.1; letter-spacing: -0.02em; }
+  .survey span { display: block; margin-top: 6px; font-size: 0.9375rem; color: var(--muted); line-height: 1.45; }
+
+  .equation {
+    display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 14px;
+    font-family: var(--display); font-size: clamp(1.125rem, 2.1vw, 1.5rem);
+    background: var(--paper); border-radius: 12px; padding: 22px 24px;
+  }
+  .equation .term { display: inline-flex; flex-direction: column; }
+  .equation .term small { font-size: 0.8125rem; color: var(--muted); font-weight: 500; }
+  .equation .op { color: var(--muted); }
+  .equation del { text-decoration: line-through; text-decoration-color: var(--red); text-decoration-thickness: 2px; color: var(--muted); margin-right: 6px; }
+  .equation ins { text-decoration: none; font-weight: 750; }
+
+  details.more { margin-top: 30px; border-top: 1px solid var(--rule); }
+  details.more summary {
+    list-style: none; cursor: pointer;
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    padding: 18px 0 0; font-family: var(--display); font-weight: 650; font-size: 1rem; color: var(--blue);
+  }
+  details.more summary::-webkit-details-marker { display: none; }
+  details.more summary .sign { width: 28px; height: 28px; border-radius: 50%; border: 1.5px solid currentColor; position: relative; flex: none; }
+  details.more summary .sign::before, details.more summary .sign::after { content: ""; position: absolute; left: 50%; top: 50%; width: 11px; height: 1.5px; background: currentColor; transform: translate(-50%, -50%); transition: transform .2s; }
+  details.more summary .sign::after { transform: translate(-50%, -50%) rotate(90deg); }
+  details.more[open] summary .sign::after { transform: translate(-50%, -50%) rotate(0deg); }
+  details.more .label-close { display: none; }
+  details.more[open] .label-open { display: none; }
+  details.more[open] .label-close { display: inline; }
+  .more-body { padding-top: 8px; max-width: 68ch; }
+  .more-body h4 { font-size: 1.0625rem; margin-top: 28px; }
+  .more-body p, .more-body ul, .more-body ol { margin-top: 8px; }
+  .more-body ul, .more-body ol { padding-left: 1.2em; }
+  .more-body li { margin-top: 6px; }
+  .more-body table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 0.96875rem; }
+  .more-body th, .more-body td { text-align: left; padding: 8px 12px 8px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  .more-body th { font-family: var(--display); font-weight: 650; font-size: 0.875rem; color: var(--muted); }
+  .more-body td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+  .deck-link { display: inline-block; margin-top: 24px; font-family: var(--display); font-weight: 650; }
+
+  /* About */
+  .about-copy p { max-width: 64ch; font-size: 1.125rem; }
+  .about-copy p + p { margin-top: 18px; }
+  .skills { margin: 44px 0 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 40px; }
+  .skills dt { font-family: var(--display); font-weight: 650; }
+  .skills dd { margin: 6px 0 0; color: var(--muted); line-height: 1.6; }
+  .creds { list-style: none; margin: 8px 0 0; padding: 0; }
+  .creds li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 24px; padding: 16px 0; border-bottom: 1px solid var(--rule); }
+  .creds li:last-child { border-bottom: 0; }
+  .creds strong { font-family: var(--display); font-weight: 650; }
+  .creds span { display: block; color: var(--muted); font-size: 0.96875rem; }
+  .creds .when { padding-top: 0; white-space: nowrap; }
+
+  /* Contact */
+  .contact-line { font-size: 1.125rem; max-width: 56ch; }
+  .email {
+    display: inline-block; margin-top: 20px;
+    font-family: var(--display); font-weight: 700; font-size: clamp(1.5rem, 4.2vw, 3rem);
+    letter-spacing: -0.025em; line-height: 1.1; color: var(--ink);
+    text-decoration: underline; text-decoration-color: var(--red); text-decoration-thickness: 3px; text-underline-offset: 8px;
+    overflow-wrap: anywhere;
+  }
+  .email:hover { color: var(--blue); text-decoration-color: var(--blue); }
+  .contact-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; }
+
+  .site-footer { border-top: 1px solid var(--rule); padding-block: 28px; font-size: 0.9375rem; color: var(--muted); }
+  .site-footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    .section { grid-template-columns: 1fr; }
+    .section-head { position: static; }
+    .brief { grid-template-columns: 1fr; gap: 18px; }
+    .survey { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .survey div:nth-child(3) { padding-left: 0; border-left: 0; }
+    .survey div:nth-child(n+3) { border-top: 1px solid var(--rule); }
+  }
+  @media (max-width: 720px) {
+    .nav .hide-sm { display: none; }
+    .redlines li { grid-template-columns: 1fr; gap: 6px; }
+    .hero-top { grid-template-columns: 1fr; gap: 24px; }
+    .portrait { order: -1; }
+    .portrait img { width: 104px; aspect-ratio: 1; border-radius: 20px; }
+    .campus img { aspect-ratio: 5 / 2; }
+    .score { grid-template-columns: 1fr 3rem; }
+    .score .track { grid-column: 1 / -1; grid-row: 2; }
+    .timeline li { grid-template-columns: 1fr; }
+    .skills { grid-template-columns: 1fr; }
+    .creds li { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 430px) {
+    .nav .hide-xs { display: none; }
+    .nav { gap: 14px; font-size: 0.875rem; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .redlines del::after { animation: none; transform: scaleX(1); }
+    .redlines ins { animation: none; opacity: 1; transform: none; }
+    details.more summary .sign::before, details.more summary .sign::after { transition: none; }
+  }
+  @media print {
+    .site-header, .actions, .contact-links { display: none; }
+    .redlines del::after { animation: none; transform: scaleX(1); }
+    .redlines ins { animation: none; opacity: 1; transform: none; }
+    .section-head { position: static; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top">Aditya Pandey</a>
+    <nav class="nav" aria-label="Main">
+      <a class="hide-xs" href="#work">Work</a>
+      <a href="#case-studies">Case studies</a>
+      <a class="hide-sm" href="#about">About</a>
+      <a class="hide-sm" href="#contact">Contact</a>
+      <a class="nav-resume" href="assets/Aditya-Pandey-Resume.pdf" target="_blank" rel="noopener">Résumé</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- Hero -->
+  <section class="wrap hero" aria-labelledby="hero-title">
+    <div class="hero-top">
+      <div class="hero-text">
+        <h1 id="hero-title">I scope enterprise AI workflows and decide where the human stays in the loop.</h1>
+        <p class="hero-lede"><strong>Associate Product Manager at UnifyApps, Gurugram.</strong> For the past year I've taken agentic systems from discovery to launch for robotics, EdTech and information-management clients. Before that, I worked on pricing at Spinny, demand forecasting at Assiduus and a hiring product at FlinkHire.</p>
+      </div>
+      <picture class="portrait">
+        <source media="(max-width: 720px)" srcset="assets/aditya-pandey-sm.jpg" width="320" height="320">
+        <img src="assets/aditya-pandey.jpg" width="520" height="650" alt="Aditya Pandey, smiling, in a dark suit and tie">
+      </picture>
+    </div>
+
+    <ul class="redlines" aria-label="Before and after results from shipped work">
+      <li style="--i:0">
+        <del><span class="sr">Before: </span>3-day review cycle</del>
+        <ins><span class="sr">After: </span>4 hours</ins>
+        <span class="note">Agentic GenAI pipeline on GPT, Claude and Gemini, with human review kept in</span>
+      </li>
+      <li style="--i:1">
+        <del><span class="sr">Before: </span>4 hours of ops load</del>
+        <ins><span class="sr">After: </span>10 minutes</ins>
+        <span class="note">Agentic incident management for a robotics company, 90% of incidents hands-free</span>
+      </li>
+      <li style="--i:2">
+        <del><span class="sr">Before: </span>4 legacy tools</del>
+        <ins><span class="sr">After: </span>1 workspace</ins>
+        <span class="note">Coaching operations platform now used by 50+ coaches</span>
+      </li>
+    </ul>
+
+    <div class="actions">
+      <a class="btn primary" href="#work">See my work</a>
+      <a class="btn" href="assets/Aditya-Pandey-Resume.pdf" download>Download résumé (PDF)</a>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section class="wrap section" id="work" aria-labelledby="work-title">
+    <header class="section-head">
+      <h2 id="work-title">Shipped work</h2>
+      <p>Enterprise deployments at UnifyApps, an enterprise AI and automation platform. Client names are kept private.</p>
+    </header>
+
+    <div class="section-body">
+
+      <article class="entry">
+        <div class="entry-top">
+          <h3>AI meeting prep agent</h3>
+          <span class="status">Current</span>
+        </div>
+        <p class="entry-meta">Information-management client, as Associate Product Manager</p>
+        <p class="entry-problem">Sellers had to gather account context from several systems before every call.</p>
+        <ul class="points">
+          <li>Defined the requirements for an agent that turns seller pain points into a structured brief covering stakeholders, risks and coaching notes.</li>
+          <li>Designed how the agent pulls context across CRM, call recordings, activity data and sales content, and generates the meeting deck automatically.</li>
+        </ul>
+        <ul class="tools" aria-label="Systems integrated">
+          <li>Salesforce</li><li>Gong</li><li>People.ai</li><li>Seismic</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-top">
+          <h3>Agentic incident management</h3>
+        </div>
+        <p class="entry-meta">Robotics client, as Product Analyst</p>
+        <p class="entry-problem">Incident triage was fragmented across people and tools, which slowed resolution and left gaps in documentation.</p>
+        <ul class="points">
+          <li>Framed fragmented triage as the core problem and defined an agentic platform on Zendesk hooks, which halved incident resolution time.</li>
+          <li>Set the automation boundary at Sev1 and Sev2, so 90% of incidents run hands-free.</li>
+          <li>Mapped the escalation matrix with the client's ops team so only rostered on-call owners get paged before L1 and L2 managers, holding 100% SLA compliance.</li>
+          <li>Specified a bridge-call bot that pages responders from in-chat commands and sends out meeting minutes automatically.</li>
+        </ul>
+        <ul class="results" aria-label="Results">
+          <li><del><span class="sr">Ops load before: </span>4 hours</del><ins><span class="sr">after: </span>10 min</ins> ops load</li>
+          <li><ins>50%</ins> faster resolution</li>
+          <li><ins>100%</ins> SLA compliance</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-top">
+          <h3>Coaching operations platform</h3>
+        </div>
+        <p class="entry-meta">EdTech client, as Product Analyst</p>
+        <p class="entry-problem">Coaches, students and admins worked across four separate tools, and uploads were sorted and scheduled by hand.</p>
+        <ul class="points">
+          <li>Wrote the spec for a single workspace covering the coach, student and admin journeys, replacing four legacy tools with one system of record.</li>
+          <li>Identified manual sorting as the main bottleneck and specified an OpenAI step that schedules parsed uploads against each coach's live capacity.</li>
+          <li>Launched reporting and task-tracking modules that replaced weekly status compilation with self-serve dashboards.</li>
+        </ul>
+        <ul class="results" aria-label="Results">
+          <li><del><span class="sr">Before: </span>4 tools</del><ins><span class="sr">after: </span>1 workspace</ins></li>
+          <li><ins>50+</ins> coaches using it</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-top">
+          <h3>Automation portfolio and GenAI pipelines</h3>
+        </div>
+        <p class="entry-meta">Internal teams, as Product Analyst</p>
+        <p class="entry-problem">Teams had more automation ideas than capacity to build them, and review-heavy work took days.</p>
+        <ul class="points">
+          <li>Ranked 20+ automation candidates on effort against value and shipped the highest-impact ones first.</li>
+          <li>Scoped agentic pipelines on GPT, Claude and Gemini that kept human review in the loop while compressing a multi-day cycle.</li>
+        </ul>
+        <ul class="results" aria-label="Results">
+          <li><del><span class="sr">Before: </span>3 days</del><ins><span class="sr">after: </span>4 hours</ins> per cycle</li>
+          <li><ins>1 day a week</ins> returned to each team</li>
+        </ul>
+      </article>
+
+      <h3 class="sub">Before UnifyApps</h3>
+      <ol class="timeline">
+        <li>
+          <span class="when">Jul – Aug 2025</span>
+          <div>
+            <h4>Business Analyst Intern, Spinny</h4>
+            <p>Reviewed weekly price changes on 500+ used-car listings and flagged 8% as mispriced for the demand pricing team, with the drivers documented. Built SQL and Excel trackers that cut review turnaround by 20%.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when">Jul – Dec 2024</span>
+          <div>
+            <h4>Analyst Intern, Assiduus</h4>
+            <p>Built demand forecasts from historical sales that improved inventory turnover by 20% and kept fast-moving SKUs in stock at peak. Analysed Amazon revenue, competitor pricing and ad performance across 10+ campaigns.</p>
+          </div>
+        </li>
+        <li>
+          <span class="when">May – Jul 2024</span>
+          <div>
+            <h4>Product Manager Intern, FlinkHire</h4>
+            <p>Interviewed 20+ HR managers and candidates, turned recurring frictions into user stories, and piloted a résumé-parsing feature that lifted adoption by 35%. Built a 200+ lead pipeline for go-to-market.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Case studies -->
+  <section class="wrap section" id="case-studies" aria-labelledby="cases-title">
+    <header class="section-head">
+      <h2 id="cases-title">Case studies</h2>
+      <p>Independent product work: a fellowship capstone, a primary-research concept and a growth strategy assignment. Open any of them for the full reasoning.</p>
+    </header>
+
+    <div class="section-body">
+
+      <!-- BookMyShow -->
+      <article class="study" id="bookmyshow">
+        <h3>Fixing ticket booking for high-demand events on BookMyShow</h3>
+        <p class="entry-meta">NextLeap Product Manager Fellowship capstone, 2024. Awarded Top Fellow.</p>
+        <p class="study-summary">During sales for events like Coldplay and the Cricket World Cup, fans hit crashes, surprise logouts and long queues, then abandoned checkout, just as Zomato District was competing for the same events.</p>
+
+        <dl class="brief">
+          <div><dt>The lever</dt><dd>I broke revenue down to conversion from event page to cart, checkout and payment, the one number a product change could move without adding server load.</dd></div>
+          <div><dt>What users said</dt><dd>21 users surveyed. They wanted to see their live queue position, and 62% were first-time concert-goers confused by seating tiers.</dd></div>
+          <div><dt>What I proposed</dt><dd>A VIP tiered queue for loyal buyers, with a lottery that gives everyone else a fair second chance at tickets.</dd></div>
+        </dl>
+
+        <figure>
+          <figcaption>Four options, weighted score out of 10 (user value 30%, business impact 25%, feasibility 25%, engagement 20%)</figcaption>
+          <div class="scores">
+            <div class="score chosen"><span>VIP tiered queue with lottery</span><span class="track"><span style="--v:8.75"></span></span><b>8.75</b></div>
+            <div class="score"><span>Slot releases with queue persistence</span><span class="track"><span style="--v:7.85"></span></span><b>7.85</b></div>
+            <div class="score"><span>TicketPods group booking</span><span class="track"><span style="--v:7.8"></span></span><b>7.80</b></div>
+            <div class="score"><span>Real-time queue transparency</span><span class="track"><span style="--v:7.05"></span></span><b>7.05</b></div>
+          </div>
+        </figure>
+
+        <details class="more">
+          <summary><span><span class="label-open">Read the full approach</span><span class="label-close">Hide the full approach</span></span><span class="sign" aria-hidden="true"></span></summary>
+          <div class="more-body">
+            <h4>Market context</h4>
+            <p>BookMyShow's operating revenue grew from ₹277 Cr in FY22 to ₹1,400 Cr in FY24, with live events at about a quarter of revenue. Growth was slowing, competition sharpened after Zomato acquired Paytm Insider in August 2024, and customers switch platforms easily.</p>
+
+            <h4>Research</h4>
+            <p>A survey of 21 users and follow-up interviews showed:</p>
+            <ul>
+              <li>Most respondents named missing out on tickets for a high-demand event as a major frustration, and 71% were aged 18 to 34.</li>
+              <li>62% were first-time concert-goers who didn't understand seating and price tiers, which slowed their decisions at the worst possible moment.</li>
+              <li>Users wanted real-time queue position and ticket availability to trust the process.</li>
+              <li>Because concerts are social, many wanted to book together as a group.</li>
+            </ul>
+            <p>Two personas anchored the design: Ankit, a 25-year-old IT professional who books concerts and cricket often, and Riya, a college student who was logged out mid-booking for Coldplay and lost her place.</p>
+
+            <h4>Options and how I chose</h4>
+            <p>I grouped four solutions under customer experience and operational efficiency, listed the main risk of each, and scored them. The VIP tiered queue won because it rewards repeat buyers, keeps demand controllable, and uses the lottery to protect fairness for everyone else. Its main risks were lottery fatigue and queue complexity.</p>
+
+            <h4>Design</h4>
+            <p>Wireframes cover the live events home screen, an event page that offers lottery entry or VIP access, a queue screen with live position and estimated wait, and checkout. The backend routes requests through an API gateway (authentication, rate limiting) to event and booking services, then through VIP eligibility logic into queue management and a separate lottery service.</p>
+
+            <h4>How I'd measure it</h4>
+            <ul>
+              <li>North star: ticket sales conversion for VIP users, as a share of available tickets.</li>
+              <li>Supporting: VIP activation rate, time to checkout for VIP users, VIP retention across events, and how many users re-enter a lottery after losing one.</li>
+            </ul>
+
+            <h4>Risks and mitigations</h4>
+            <ul>
+              <li>Occasional buyers may feel the system is unfair, so a fixed share of tickets is reserved for the lottery and non-VIP users get offers on future events.</li>
+              <li>Expensive tickets can cause payment drop-off, so the design adds a book-now, pay-later option.</li>
+            </ul>
+          </div>
+        </details>
+        <a class="deck-link" href="assets/case-study-bookmyshow.pdf" target="_blank" rel="noopener">Open the full deck (PDF)</a>
+      </article>
+
+      <!-- P2P mobility -->
+      <article class="study" id="p2p-mobility">
+        <h3>Neighbourhood car and bike sharing for Bengaluru</h3>
+        <p class="entry-meta">Product concept from primary research, 2025</p>
+        <p class="study-summary">Bengaluru residents buy cars because public transport is unreliable, then pay EMIs and fuel for vehicles that sit idle most of the week. I tested whether neighbours would share them.</p>
+
+        <dl class="brief">
+          <div><dt>The insight</dt><dd>Interest wasn't the problem; trust was. People would share, but only inside their own community, with ID checks and insurance.</dd></div>
+          <div><dt>What I proposed</dt><dd>A peer-to-peer platform for gated communities that covers both rentals and carpooling, including two-wheelers.</dd></div>
+          <div><dt>North star</dt><dd>Successful trips completed, supported by active listings, vehicle utilisation, match conversion and retention.</dd></div>
+        </dl>
+
+        <figure>
+          <figcaption>From a neighbourhood survey and face-to-face conversations</figcaption>
+          <div class="survey">
+            <div><b>93%</b><span>find owning a vehicle too expensive</span></div>
+            <div><b>80%+</b><span>of vehicles sit idle 2 to 5 days a week</span></div>
+            <div><b>92%</b><span>would carpool with neighbours for regular commutes</span></div>
+            <div><b>100%</b><span>want mandatory government ID verification</span></div>
+          </div>
+        </figure>
+
+        <details class="more">
+          <summary><span><span class="label-open">Read the full approach</span><span class="label-close">Hide the full approach</span></span><span class="sign" aria-hidden="true"></span></summary>
+          <div class="more-body">
+            <h4>The problem</h4>
+            <p>Bengaluru has about 12.4 million registered vehicles, including roughly 2.5 million cars and 8.2 million two-wheelers. A 12 km commute can take hours, metro expansion lags demand, and the city is one of India's largest fuel consumers. Ownership is a financial burden people accept because they want control over their travel.</p>
+
+            <h4>Who it's for</h4>
+            <ul>
+              <li>Stretched tech professionals (25 to 35) with high EMIs who want to earn from an idle car.</li>
+              <li>Students and temporary residents (18 to 25) who need flexible transport without buying a vehicle.</li>
+              <li>Families in gated communities who often need a second car for a few hours.</li>
+            </ul>
+
+            <h4>What the research showed</h4>
+            <p>89% of non-owners were open to renting from a neighbour and 80% of owners were open to renting out an idle vehicle. 71% wanted insurance on every trip. Owners' top fears were damage and misuse, each cited by half. One 42-year-old resident said they would never hand a car to a stranger from an app, but would consider someone from their own complex who was verified by the residents' welfare association.</p>
+
+            <h4>MVP</h4>
+            <ul>
+              <li>Verification with Aadhaar or PAN, driving licence and community ID.</li>
+              <li>Listings for cars and two-wheelers with owner-set availability and pricing.</li>
+              <li>Search, filters and in-app payment for renters.</li>
+              <li>Carpool matching for recurring commutes, such as to IT parks, with live tracking.</li>
+              <li>In-app chat, mandatory ratings after every trip, and basic insurance on every transaction.</li>
+            </ul>
+
+            <h4>Key flows</h4>
+            <p>I mapped three journeys end to end: a renter discovering, booking, collecting and returning a vehicle; a rider finding and joining a carpool; and an owner listing a vehicle, passing verification, managing requests and receiving payouts.</p>
+
+            <h4>Go-to-market</h4>
+            <p>Launch community by community: partner with residents' welfare associations for endorsement and access, set up on-ground kiosks for onboarding, give owners listing bonuses and renters first-trip discounts and referral rewards, and run geo-targeted ads inside community boundaries. Feedback from the app and regular association check-ins feeds the next iteration.</p>
+          </div>
+        </details>
+        <a class="deck-link" href="assets/case-study-p2p-mobility.pdf" target="_blank" rel="noopener">Open the full deck (PDF)</a>
+      </article>
+
+      <!-- Virgio -->
+      <article class="study" id="skincare-growth">
+        <h3>Growing an organic skincare brand to $6M a month without buying traffic</h3>
+        <p class="entry-meta">APM assignment for Virgio</p>
+        <p class="study-summary">The brief: grow monthly revenue from $3.75M to $6M in four months with limited acquisition spend and a $500K quarterly budget. With 2.5M monthly users already visiting, the answer had to come from the ones already there.</p>
+
+        <dl class="brief">
+          <div><dt>The diagnosis</dt><dd>Only 2.5% of visitors bought, order value sat flat at $50 in a high-margin category, and 7 in 10 customers never came back.</dd></div>
+          <div><dt>What I proposed</dt><dd>Nine initiatives across conversion, order value and retention, plus Refill Club, a refill subscription in reusable packaging.</dd></div>
+          <div><dt>The trade-off</dt><dd>$450K allocated across seven initiatives with $50K held back. AI personalisation and influencer campaigns were deferred.</dd></div>
+        </dl>
+
+        <figure>
+          <figcaption>The target, with monthly users held flat</figcaption>
+          <div class="equation" role="img" aria-label="2.5 million monthly users, times conversion raised from 2.5% to 4%, times order value raised from 50 to 60 dollars, equals new-order revenue rising from 3.125 million to 6 million dollars a month, before repeat purchases">
+            <span class="term">2.5M<small>monthly users</small></span>
+            <span class="op" aria-hidden="true">×</span>
+            <span class="term"><span><del>2.5%</del><ins>4%</ins></span><small>conversion</small></span>
+            <span class="op" aria-hidden="true">×</span>
+            <span class="term"><span><del>$50</del><ins>$60</ins></span><small>order value</small></span>
+            <span class="op" aria-hidden="true">=</span>
+            <span class="term"><span><del>$3.1M</del><ins>$6M</ins></span><small>a month, before repeat orders</small></span>
+          </div>
+        </figure>
+
+        <details class="more">
+          <summary><span><span class="label-open">Read the full approach</span><span class="label-close">Hide the full approach</span></span><span class="sign" aria-hidden="true"></span></summary>
+          <div class="more-body">
+            <h4>Three levers and what moves them</h4>
+            <ul>
+              <li><strong>Conversion, 2.5% to 4%:</strong> verified reviews with customer photos, "shop by skin type" filters, and a skin quiz that leads to a personalised routine page.</li>
+              <li><strong>Order value, $50 to $60:</strong> curated AM/PM and concern-based bundles, free shipping above $60 with a clear "add a little more" nudge, and "complete your routine" cross-sells.</li>
+              <li><strong>Retention, 30% to 50%:</strong> a points-based loyalty programme with tiers, restock reminders timed to product usage at 30, 60 and 90 days, and post-purchase guides on using products well.</li>
+            </ul>
+
+            <h4>The creative bet: Refill Club</h4>
+            <p>Customers buy a starter kit with a reusable bottle, then receive refill pouches every 30, 60 or 90 days at 10 to 15% less, with free shipping and loyalty points. Skincare is a habit, people forget to restock, and organic buyers care about packaging waste, so the subscription fits how the category is already used. The reusable bottle adds a commitment that makes switching brands feel wasteful.</p>
+
+            <h4>Rollout</h4>
+            <ol>
+              <li>Month 1: pick three hero products with high reorder potential, design the bottle, and sign pouch suppliers.</li>
+              <li>Month 2: launch a "subscribe and save 15% with free shipping" opt-in at checkout, with email and WhatsApp reminders.</li>
+              <li>Month 3: track refill conversion and retention, A/B test reminder timing and messaging, and scale if more than 25% of subscribers keep reordering.</li>
+            </ol>
+
+            <h4>Where the budget went</h4>
+            <table>
+              <thead><tr><th scope="col">Initiative</th><th scope="col">Goal</th><th scope="col" style="text-align:right">Budget</th></tr></thead>
+              <tbody>
+                <tr><td>Refill Club MVP</td><td>Retention and lifetime value</td><td class="num">$95K</td></tr>
+                <tr><td>Skin quiz and onboarding</td><td>Conversion</td><td class="num">$90K</td></tr>
+                <tr><td>Loyalty programme</td><td>Repeat purchases</td><td class="num">$75K</td></tr>
+                <tr><td>Product bundles</td><td>Order value</td><td class="num">$60K</td></tr>
+                <tr><td>Cross-sells and checkout nudges</td><td>Order value</td><td class="num">$50K</td></tr>
+                <tr><td>Replenishment reminders</td><td>Reorders</td><td class="num">$45K</td></tr>
+                <tr><td>Analytics and A/B testing</td><td>Measure and iterate</td><td class="num">$35K</td></tr>
+                <tr><td>Contingency</td><td>Packaging, vendor or timeline surprises</td><td class="num">$50K</td></tr>
+              </tbody>
+            </table>
+
+            <h4>What I left out, and why</h4>
+            <p>I plotted every initiative on impact against effort. Refill Club, bundles and reminders were quick wins; loyalty and the skin quiz were worth their higher effort. AI personalisation was deferred because simpler tools get most of the benefit within four months, and influencer campaigns because they're expensive, hard to predict, and don't help retention.</p>
+          </div>
+        </details>
+        <a class="deck-link" href="assets/case-study-virgio-skincare.pdf" target="_blank" rel="noopener">Open the full deck (PDF)</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="wrap section" id="about" aria-labelledby="about-title">
+    <header class="section-head">
+      <h2 id="about-title">About</h2>
+    </header>
+
+    <div class="section-body">
+      <figure class="campus">
+        <img src="assets/bits-goa-campus.jpg" width="1400" height="350" loading="lazy" alt="The main building of BITS Pilani's Goa campus, framed by palm trees and flowering shrubs">
+        <figcaption>BITS Pilani, Goa Campus, where I studied from 2021 to 2025</figcaption>
+      </figure>
+      <div class="about-copy">
+        <p>I studied mechanical engineering at BITS Pilani, Goa, and moved into product through internships that kept me close to data and users: pricing at Spinny, forecasting at Assiduus and customer interviews at FlinkHire. I joined UnifyApps as a Product Analyst in September 2025 and was promoted to Associate Product Manager in August 2026.</p>
+        <p>Most of my work sits where a business process meets an AI system. I look for the step that actually slows people down, write the spec around it, and decide which calls a model can make on its own and which stay with a person. Then I judge it by turnaround time and adoption.</p>
+      </div>
+
+      <dl class="skills">
+        <div><dt>Product</dt><dd>Discovery and user research, PRDs, roadmapping, prioritisation, backlog grooming, agile delivery, stakeholder alignment, go-to-market</dd></div>
+        <div><dt>AI</dt><dd>GPT, Claude and Gemini, prompt engineering, AI agents, LLM applications, workflow automation with n8n</dd></div>
+        <div><dt>Technical and analytics</dt><dd>SQL, Python, REST APIs and integrations, JSON, Excel, Power BI</dd></div>
+        <div><dt>Tools</dt><dd>Figma, Postman, Jira, Notion, Whimsical</dd></div>
+      </dl>
+
+      <h3 class="sub">Education and certifications</h3>
+      <ul class="creds">
+        <li><div><strong>BITS Pilani, Goa Campus</strong><span>BE (Hons.) Mechanical Engineering</span></div><span class="when">2021 – 2025</span></li>
+        <li><div><strong>NextLeap Product Manager Fellowship</strong><span>Awarded Top Fellow</span></div><span class="when">Nov 2024</span></li>
+        <li><div><strong>McKinsey.org Forward Program</strong><span>McKinsey.org</span></div><span class="when">Jul 2025</span></li>
+        <li><div><strong>MySQL Bootcamp</strong><span>Udemy</span></div><span class="when">Mar 2025</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="wrap section" id="contact" aria-labelledby="contact-title">
+    <header class="section-head">
+      <h2 id="contact-title">Contact</h2>
+    </header>
+    <div class="section-body">
+      <p class="contact-line">Email is the fastest way to reach me. I'm happy to walk through any of this work in more detail.</p>
+      <a class="email" href="mailto:adityakp432002@gmail.com">adityakp432002@gmail.com</a>
+      <div class="contact-links">
+        <a class="btn" href="https://www.linkedin.com/in/aditya-pandey432002" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="assets/Aditya-Pandey-Resume.pdf" download>Download résumé (PDF)</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Aditya Pandey</span>
+    <span>Gurugram, India</span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const header = document.querySelector('.site-header');
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+</script>
+</body>
+</html>
