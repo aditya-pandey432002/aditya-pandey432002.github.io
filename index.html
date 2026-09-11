@@ -52,7 +52,7 @@
   em.i { font-family: var(--serif); font-style: italic; font-weight: 400; letter-spacing: -0.01em; color: var(--accent); }
   :focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 6px; }
   .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
-  .wrap { max-width: 1180px; margin: 0 auto; padding-inline: clamp(20px, 5vw, 48px); }
+  .wrap { max-width: 1180px; margin: 0 auto; padding-inline: clamp(24px, 5vw, 48px); }
 
   /* reveal */
   .r { opacity: 0; transform: translateY(24px); transition: opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1); }
@@ -90,9 +90,6 @@
   .portrait::before { content: ""; position: absolute; inset: -8%; border-radius: 40px; background: conic-gradient(from 120deg, var(--accent), var(--accent-2), transparent 55%, var(--accent)); filter: blur(46px); opacity: .5; z-index: 0; animation: spin 14s linear infinite; }
   .portrait img { height: auto; position: relative; z-index: 1; display: block; width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 28px; border: 1px solid var(--line-2); box-shadow: 0 40px 80px -30px rgba(0,0,0,.8); transition: transform .5s cubic-bezier(.2,.7,.2,1); }
   .portrait:hover img { transform: perspective(900px) rotateY(-4deg) rotateX(2deg) scale(1.02); }
-  .tag { position: absolute; z-index: 2; left: -18px; bottom: 34px; background: var(--card); border: 1px solid var(--line-2); border-radius: 14px; padding: 12px 16px; font-size: .875rem; box-shadow: 0 20px 40px -20px rgba(0,0,0,.9); }
-  .tag b { display: block; font-weight: 700; }
-  .tag span { color: var(--muted); }
   @keyframes spin { to { transform: rotate(360deg); } }
 
   /* stats */
@@ -244,13 +241,20 @@
     .sec-h { flex-direction: column; align-items: start; }
   }
   @media (max-width: 640px) {
+    .wrap { padding-inline: 22px; }
+    .stat { padding-right: 16px; }
+    .stat + .stat { padding-left: 16px; }
+    .card { padding: 22px; border-radius: 18px; }
+    .viz { padding: 20px; position: static; }
+    .survey { gap: 12px; }
+    .study { padding: 32px 0; }
+    .contact { padding-inline: 0; }
     .nav .hs { display: none; }
     .tl li { grid-template-columns: 1fr; }
     .skills { grid-template-columns: 1fr; }
     .portrait { max-width: 150px; }
     .portrait img { aspect-ratio: 1; height: auto; border-radius: 22px; }
     .portrait::before { inset: -12%; }
-    .tag { left: 120px; bottom: 6px; padding: 10px 12px; white-space: nowrap; }
     .hero h1 { font-size: clamp(2.5rem, 12vw, 3.4rem); }
   }
   @media (prefers-reduced-motion: reduce) {
@@ -291,7 +295,6 @@
           <source media="(max-width: 640px)" srcset="assets/aditya-pandey-sm.jpg">
           <img src="assets/aditya-pandey.jpg" width="520" height="650" alt="Aditya Pandey" fetchpriority="high">
         </picture>
-        <div class="tag"><b>Top Fellow, NextLeap</b><span>Ranked #1 of 200+ PM fellows</span></div>
       </div>
     </div>
 
